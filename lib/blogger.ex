@@ -7,7 +7,7 @@ defmodule Blogger do
   if it comes from the database, an external API or others.
   """
 
-  #takes a list of strings and converts to uppercase
+  #string_touppercase()params takes a list of strings and converts to uppercase
   # def string(params) do
   #  string_touppercase(params)
   # end
