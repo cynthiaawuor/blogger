@@ -6,4 +6,13 @@ defmodule Blogger do
   Contexts are also responsible for managing your data, regardless
   if it comes from the database, an external API or others.
   """
+
+  #takes a list of strings and converts to uppercase
+  # def string(params) do
+  #  string_touppercase(params)
+  # end
+
+  def string_touppercase(params) do
+   Enum.map(params, fn param -> String.upcase(param) end)
+  end
 end
