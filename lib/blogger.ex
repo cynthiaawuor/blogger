@@ -13,6 +13,16 @@ defmodule Blogger do
   # end
 
   def string_touppercase(params) do
-   Enum.map(params, fn param -> String.upcase(param) end)
+    params
+    |>Enum.each(String.upcase(params))
+    # params_split=String.split(params, " ")
+    # params_split
+    # |> String.upcase()
+    #  Enum.join(params_to_uppercase)
+  end
+  def capitalize(words) do
+    words_split=String.split(words, " ")
+    capitalize_words=Enum.map(words_split, &String.capitalize/1)
+    Enum.join(capitalize_words, " ")
   end
 end
